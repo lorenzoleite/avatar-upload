@@ -3,7 +3,11 @@ import { useDropzone, DropzoneOptions, DropzoneState } from 'react-dropzone'
 
 import { Dropzone, Title, Subtitle } from './styles'
 
-export function AvatarUpload() {
+import { Button } from '../Button'
+
+type AvatarUploadProps = {}
+
+export function AvatarUpload({}: AvatarUploadProps) {
   const { acceptedFiles, fileRejections, getRootProps, getInputProps } =
     useDropzone({
       accept: { 'image/png': ['.png'], 'image/jpeg': ['.jpeg, .jpg'] },
@@ -14,6 +18,7 @@ export function AvatarUpload() {
       <input {...getInputProps()} />
       <Title>Organization Logo</Title>
       <Subtitle>Drop the image here or click to browse.</Subtitle>
+      <Button>Save</Button>
     </Dropzone>
   )
 }
