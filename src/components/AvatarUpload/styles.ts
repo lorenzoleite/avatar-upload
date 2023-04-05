@@ -16,6 +16,50 @@ export const Dropzone = styled.div`
   `}
 `
 
+export const Image = styled.img`
+  width: 11.3rem;
+  height: 11.3rem;
+`
+
+export const FilePreview = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11.3rem;
+  height: 11.3rem;
+  border-radius: 7.25rem;
+  clip-path: circle();
+
+  ${({ theme }) => css`
+    background-color: ${theme.colors['gray.200']};
+  `}
+`
+
+export const Flex = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  p {
+    margin-left: 1.2rem;
+  }
+`
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+
+  div {
+    margin-right: 3.2rem;
+  }
+`
+
 export const Title = styled.p`
   ${({ theme }) => css`
     font-family: ${theme.font.family};

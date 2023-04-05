@@ -1,10 +1,10 @@
 import React from 'react'
-import { Wrapper } from './styles'
+import { StyledContainer } from './styles'
 
 type ContainerProps = {
   children: React.ReactNode
 }
 
 export function Container({ children }: ContainerProps) {
-  return <Wrapper>{children}</Wrapper>
+  return <StyledContainer>{children}</StyledContainer>
 }
