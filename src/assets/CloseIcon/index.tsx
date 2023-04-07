@@ -1,14 +1,6 @@
-import React from 'react'
-
 export function CloseIcon() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
-      fill="none"
-      viewBox="0 0 20 20"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
       <path
         fill="#677489"
         fillRule="evenodd"
@@ -16,5 +8,5 @@ export function CloseIcon() {
         clipRule="evenodd"
       ></path>
     </svg>
-  )
+  );
 }

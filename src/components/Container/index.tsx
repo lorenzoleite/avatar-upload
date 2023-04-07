@@ -1,10 +1,10 @@
-import React from 'react'
-import { StyledContainer } from './styles'
+import React from 'react';
+import { StyledContainer } from './styles';
 
 type ContainerProps = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 export function Container({ children }: ContainerProps) {
-  return <StyledContainer>{children}</StyledContainer>
+  return <StyledContainer>{children}</StyledContainer>;
 }

@@ -12,25 +12,25 @@ export const theme = {
     'blue.200': '#3F80FF',
     'blue.100': '#B9D1FF',
 
-    'orange.100': '#C64D32'
+    'orange.100': '#C64D32',
   },
   font: {
     family: 'Inter, sans-serif',
     weights: {
       normal: 400,
-      medium: 500
+      medium: 500,
     },
     sizes: {
       small: '1.4rem',
-      medium: '1.6rem'
-    }
+      medium: '1.6rem',
+    },
   },
   borders: {
     small: '0.8rem',
-    medium: '1.6rem'
+    medium: '1.6rem',
   },
   lineHeights: {
     small: '2.52rem',
-    medium: '2.88rem'
-  }
-}
+    medium: '2.88rem',
+  },
+};

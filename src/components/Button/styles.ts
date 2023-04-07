@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
 export const StyledButton = styled.button`
   border: none;
@@ -19,4 +19,4 @@ export const StyledButton = styled.button`
       background-color: ${theme.colors['gray.500']};
     }
   `}
-`
+`;
