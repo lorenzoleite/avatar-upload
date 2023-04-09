@@ -2,7 +2,7 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    colors: {
+    color: {
       white: string;
 
       'gray.600': string;
@@ -18,17 +18,21 @@ declare module 'styled-components' {
       'orange.100': string;
     };
     font: {
-      family: string;
-      weights: {
+      family: { inter: string };
+      weight: {
         normal: number;
         medium: number;
       };
-      sizes: {
+      size: {
+        small: string;
+        medium: string;
+      };
+      lineHeight: {
         small: string;
         medium: string;
       };
     };
-    lineHeights: {
+    border: {
       small: string;
       medium: string;
     };

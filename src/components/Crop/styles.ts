@@ -1,22 +1,15 @@
 import styled, { css } from 'styled-components';
 
-export const Dropzone = styled.div`
+export const StyledCrop = styled.div`
   ${({ theme }) => css`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 55.3rem;
     height: 17.7rem;
-    background-color: ${theme.color['gray.100']};
+    padding: 3.2rem 2.5rem 3.2rem 3.2rem;
     border-radius: 0.8rem;
-    border-width: 2px;
-    border-style: dashed;
-    border-color: ${theme.color['gray.300']};
+    background-color: ${theme.color['gray.100']};
   `}
-`;
-
-export const Image = styled.img`
-  width: 11.3rem;
-  height: 11.3rem;
 `;
 
 export const FilePreview = styled.div`
@@ -33,19 +26,15 @@ export const FilePreview = styled.div`
   `}
 `;
 
-export const DropzoneTitle = styled.p`
+export const CropTitle = styled.p`
   ${({ theme }) => css`
     font-family: ${theme.font.family.inter};
-    font-size: ${theme.font.size.small};
-    font-weight: ${theme.font.weight.medium};
-    line-height: ${theme.font.lineHeight.small};
-    color: ${theme.color['gray.500']};
-  `}
-`;
-
-export const DropzoneSubtitle = styled(DropzoneTitle)`
-  ${({ theme }) => css`
+    font-size: ${theme.font.size.medium};
     font-weight: ${theme.font.weight.normal};
+    line-height: ${theme.font.lineHeight.medium};
+
     color: ${theme.color['gray.400']};
+
+    margin-bottom: 1.3rem;
   `}
 `;

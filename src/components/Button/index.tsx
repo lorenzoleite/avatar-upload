@@ -2,8 +2,8 @@ import React, { ButtonHTMLAttributes } from 'react';
 
 import { StyledButton } from './styles';
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  children: React.ReactNode;
+export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  variant?: 'solid' | 'underline' | 'icon';
 };
 
 export function Button({ children, ...props }: ButtonProps) {

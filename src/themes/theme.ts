@@ -1,5 +1,5 @@
 export const theme = {
-  colors: {
+  color: {
     white: '#FFFFFF',
 
     'gray.600': '#3D485F',
@@ -15,22 +15,24 @@ export const theme = {
     'orange.100': '#C64D32',
   },
   font: {
-    family: 'Inter, sans-serif',
-    weights: {
+    family: {
+      inter: 'Inter, sans-serif',
+    },
+    weight: {
       normal: 400,
       medium: 500,
     },
-    sizes: {
+    size: {
       small: '1.4rem',
       medium: '1.6rem',
     },
+    lineHeight: {
+      small: '2.52rem',
+      medium: '2.88rem',
+    },
   },
-  borders: {
+  border: {
     small: '0.8rem',
     medium: '1.6rem',
-  },
-  lineHeights: {
-    small: '2.52rem',
-    medium: '2.88rem',
   },
 };
