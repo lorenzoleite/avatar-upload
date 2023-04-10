@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 
-import { Dropzone, FilePreview, Image, DropzoneTitle, DropzoneSubtitle } from './styles';
+import { Dropzone, DropzoneTitle, DropzoneSubtitle, Image, ImagePreview } from './styles';
 
 import { Flex } from '../atoms/Flex';
 
@@ -12,49 +12,47 @@ import { MediaIcon } from '../../assets/MediaIcon';
 
 type AvatarUploadProps = {};
 
-type FileImage = File & {
-  preview?: string;
-};
-
 export function AvatarUpload({}: AvatarUploadProps) {
-  const [file, setFile] = useState<FileImage | null>(null);
+  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [croppedImage, setCroppedImage] = useState<string | null>(null);
   const [hasError, setHasError] = useState<boolean>(false);
-  const [sucess, setSucess] = useState<boolean>(false);
+  const [messageError, setMessageError] = useState<string | null>(null);
 
   const { getRootProps, getInputProps } = useDropzone({
     accept: { 'image/png': ['.png'], 'image/jpeg': ['.jpeg', '.jpg'] },
     maxFiles: 1,
-    onDrop: file => {
-      try {
-        setFile(
-          Object.assign(file[0], {
-            preview: URL.createObjectURL(file[0]),
-          }),
-        );
-      } catch (err) {
-        setHasError(true);
-      }
+    onDropAccepted: file => {
+      setImageFile(file[0]);
     },
-    disabled: !!file,
+    onDropRejected: file => {
+      setHasError(true);
+      setMessageError(file[0].errors[0].message);
+    },
   });
 
-  const Preview = <Image src={file?.preview} alt="Preview Image" />;
-
-  const handleResetFile = () => {
-    setFile(null);
+  const handleClose = () => {
+    setImageFile(null);
+    setCroppedImage(null);
     setHasError(false);
+    setMessageError(null);
   };
 
-  const onSaveFile = () => {
-    setSucess(true);
+  const handleSave = (imageUrl: string) => {
+    setImageFile(null);
+    setCroppedImage(imageUrl);
   };
 
   return (
     <Flex>
-      {!file && !hasError && (
-        <Dropzone {...getRootProps()}>
+      {!imageFile && !hasError && (
+        <Dropzone {...getRootProps()} justify={croppedImage ? 'flex-start' : 'center'}>
           <input {...getInputProps()} />
           <Flex align="center">
+            {croppedImage && (
+              <ImagePreview>
+                <Image src={croppedImage} />
+              </ImagePreview>
+            )}
             <Flex direction="column" align="center">
               <Flex align="center" gap="1.2rem">
                 <MediaIcon />
@@ -65,8 +63,8 @@ export function AvatarUpload({}: AvatarUploadProps) {
           </Flex>
         </Dropzone>
       )}
-      {hasError && <Error handleResetFile={handleResetFile} />}
-      {file && <Crop preview={Preview} handleResetFile={handleResetFile} onSaveFile={onSaveFile} />}
+      {hasError && messageError && <Error messageError={messageError} onClose={handleClose} />}
+      {imageFile && <Crop imageFile={imageFile} onSave={handleSave} onClose={handleClose} />}
     </Flex>
   );
 }

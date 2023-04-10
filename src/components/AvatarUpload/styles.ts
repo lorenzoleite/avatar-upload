@@ -1,25 +1,26 @@
 import styled, { css } from 'styled-components';
 
-export const Dropzone = styled.div`
-  ${({ theme }) => css`
+type DropzoneProps = {
+  justify?: string;
+};
+
+export const Dropzone = styled.div<DropzoneProps>`
+  ${({ theme, justify }) => css`
     display: flex;
-    justify-content: center;
+    justify-content: ${justify};
     width: 55.3rem;
     height: 17.7rem;
-    background-color: ${theme.color['gray.100']};
+    padding: 3.2rem;
     border-radius: 0.8rem;
+    background-color: ${theme.color['gray.100']};
+
     border-width: 2px;
     border-style: dashed;
     border-color: ${theme.color['gray.300']};
   `}
 `;
 
-export const Image = styled.img`
-  width: 11.3rem;
-  height: 11.3rem;
-`;
-
-export const FilePreview = styled.div`
+export const ImagePreview = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
@@ -28,9 +29,14 @@ export const FilePreview = styled.div`
     height: 11.3rem;
     border-radius: 7.25rem;
     clip-path: circle();
-    margin-right: 3.2rem;
+    margin-right: 5rem;
     background-color: ${theme.color['gray.200']};
   `}
+`;
+
+export const Image = styled.img`
+  width: 11.3rem;
+  height: 11.3rem;
 `;
 
 export const DropzoneTitle = styled.p`

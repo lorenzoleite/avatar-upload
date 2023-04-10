@@ -8,10 +8,11 @@ import { Flex } from '../atoms/Flex';
 import { Button } from '../Button';
 
 type ErrorProps = {
-  handleResetFile: () => void;
+  messageError: string;
+  onClose: () => void;
 };
 
-export function Error({ handleResetFile }: ErrorProps) {
+export function Error({ messageError, onClose }: ErrorProps) {
   return (
     <StyledError>
       <Flex align="center">
@@ -19,14 +20,14 @@ export function Error({ handleResetFile }: ErrorProps) {
           <AttentionIcon />
         </FilePreview>
         <Flex direction="column" gap="0.2rem">
-          <ErrorTitle>Sorry, the upload failed.</ErrorTitle>
-          <Button variant="underline" onClick={() => handleResetFile()}>
+          <ErrorTitle>Sorry, {messageError.toLowerCase()}.</ErrorTitle>
+          <Button variant="underline" onClick={() => onClose()}>
             Try again
           </Button>
         </Flex>
       </Flex>
       <Flex align="flex-start">
-        <Button variant="icon" onClick={() => handleResetFile()}>
+        <Button variant="icon" onClick={() => onClose()}>
           <CloseIcon />
         </Button>
       </Flex>

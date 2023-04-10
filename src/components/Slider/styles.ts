@@ -14,8 +14,8 @@ export const StyledInput = styled.input`
     background: ${`linear-gradient(
       to right,
       ${theme.color['blue.200']} 0%,
-      ${theme.color['blue.200']} ${(Number(value) - 1) * 1}%,
-      ${theme.color['blue.100']} ${(Number(value) - 1) * 1}%,
+      ${theme.color['blue.200']} ${(Number(value) - 1) * 100}%,
+      ${theme.color['blue.100']} ${(Number(value) - 1) * 100}%,
       ${theme.color['blue.100']} 100%
     )`};
 

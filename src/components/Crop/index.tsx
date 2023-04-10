@@ -1,51 +1,65 @@
-import { ImgHTMLAttributes, useState } from 'react';
+import { useState } from 'react';
+import AvatarEditor from 'react-avatar-editor';
 
-import { StyledCrop, FilePreview, CropTitle } from './styles';
+import { StyledCrop, ImagePreview, CropTitle } from './styles';
 
-import { AttentionIcon } from '../../assets/AttentionIcon';
 import { CloseIcon } from '../../assets/CloseIcon';
-
 import { Flex } from '../atoms/Flex';
-
 import { Button } from '../Button';
 import { Slider } from '../Slider';
 
 type CropProps = {
-  preview: React.ReactNode;
-  handleResetFile: () => void;
-  onSaveFile: () => void;
+  imageFile: File;
+  onSave: (imageUrl: string) => void;
+  onClose: () => void;
 };
 
-export function Crop({ preview, handleResetFile, onSaveFile }: CropProps) {
-  const [value, setValue] = useState(0);
+export function Crop({ imageFile, onSave, onClose }: CropProps) {
+  const [scale, setScale] = useState(1);
+  const [editor, setEditor] = useState<AvatarEditor | null>(null);
 
-  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(Number(event.target.value));
+  const handleCrop = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setScale(Number(event.target.value));
   };
+
+  const handleSave = () => {
+    if (editor) {
+      const canvas = editor.getImageScaledToCanvas();
+      canvas.toBlob(blob => {
+        if (blob) {
+          const newImageUrl = URL.createObjectURL(blob);
+          onSave(newImageUrl);
+        }
+      });
+    }
+  };
+
   return (
     <StyledCrop>
       <Flex align="center">
-        <FilePreview>{preview}</FilePreview>
+        <ImagePreview>
+          <AvatarEditor
+            ref={ref => setEditor(ref)}
+            image={imageFile}
+            scale={scale}
+            width={114}
+            height={114}
+            borderRadius={57}
+            border={0}
+          />
+        </ImagePreview>
         <Flex direction="column">
           <CropTitle>Crop</CropTitle>
-          <Slider
-            type="range"
-            id="crop-slider"
-            min="0"
-            max="100"
-            step="1"
-            value={value}
-            onChange={handleSliderChange}
-          />
+          <Slider type="range" id="crop-slider" min="1" max="2" step="0.1" value={scale} onChange={handleCrop} />
           <Flex direction="row" width="100%" justify="flex-end">
-            <Button variant="solid" onClick={() => onSaveFile()}>
+            <Button variant="solid" onClick={handleSave}>
               Save
             </Button>
           </Flex>
         </Flex>
       </Flex>
       <Flex align="flex-start">
-        <Button variant="icon" onClick={() => handleResetFile()}>
+        <Button variant="icon" onClick={() => onClose()}>
           <CloseIcon />
         </Button>
       </Flex>

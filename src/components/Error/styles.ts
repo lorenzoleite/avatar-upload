@@ -6,7 +6,7 @@ export const StyledError = styled.div`
     justify-content: space-between;
     width: 55.3rem;
     height: 17.7rem;
-    padding: 3.2rem 2.5rem 3.2rem 3.2rem;
+    padding: 3.2rem;
     border-radius: 0.8rem;
     background-color: ${theme.color['gray.100']};
   `}
