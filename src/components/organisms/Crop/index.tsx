@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import AvatarEditor from 'react-avatar-editor';
 
-import { StyledCrop, ImagePreview, CropTitle } from './styles';
+import { StyledCrop, CropTitle } from './styles';
 
-import { CloseIcon } from '../../assets/CloseIcon';
-import { Flex } from '../atoms/Flex';
-import { Button } from '../Button';
-import { Slider } from '../Slider';
+import { CloseIcon } from '../../atoms/CloseIcon';
+import { ImagePreview } from '../../molecules/ImagePreview';
+import { Button } from '../../molecules/Button';
+import { Slider } from '../../molecules/Slider';
+import { Flex } from '../../molecules/Flex';
 
 type CropProps = {
   imageFile: File;
@@ -50,9 +51,18 @@ export function Crop({ imageFile, onSave, onClose }: CropProps) {
         </ImagePreview>
         <Flex direction="column">
           <CropTitle>Crop</CropTitle>
-          <Slider type="range" id="crop-slider" min="1" max="2" step="0.1" value={scale} onChange={handleCrop} />
+          <Slider
+            type="range"
+            id="crop-slider"
+            min="1"
+            max="2"
+            step="0.1"
+            value={scale}
+            onChange={handleCrop}
+            data-testid="slider"
+          />
           <Flex direction="row" width="100%" justify="flex-end">
-            <Button variant="solid" onClick={handleSave}>
+            <Button variant="solid" onClick={() => handleSave()}>
               Save
             </Button>
           </Flex>

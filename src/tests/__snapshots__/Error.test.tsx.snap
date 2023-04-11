@@ -1,0 +1,83 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Error > should render the Error 1`] = `
+<div
+  class="sc-beqWaB gMrYaT"
+>
+  <div
+    class="sc-eDDNvR llEuPJ"
+  >
+    <div
+      class="sc-dmqHEX hOiHPF"
+    >
+      <svg
+        fill="none"
+        height="20"
+        viewBox="0 0 20 20"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          clip-path="url(#clip0_1_34)"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M9.988-.012c-5.525 0-10 4.475-10 10 0 5.524 4.474 10 10 10 5.524 0 10-4.476 10-10 0-5.525-4.476-10-10-10zm1.25 16.25h-2.5v-2.5h2.5v2.5zm0-3.75h-2.5v-8.75h2.5v8.75z"
+            fill="#fff"
+            fill-rule="evenodd"
+          />
+        </g>
+        <defs>
+          <clippath
+            id="clip0_1_34"
+          >
+            <path
+              d="M0 0H20V20H0z"
+              fill="#fff"
+            />
+          </clippath>
+        </defs>
+      </svg>
+    </div>
+    <div
+      class="sc-eDDNvR ihnWCC"
+      direction="column"
+    >
+      <p
+        class="sc-gueYoa edkQtc"
+      >
+        Sorry, 
+        sorry, the upload failed.
+        .
+      </p>
+      <button
+        class="sc-hLseeU ffsHWn"
+      >
+        Try again
+      </button>
+    </div>
+  </div>
+  <div
+    class="sc-eDDNvR bfNvSM"
+  >
+    <button
+      class="sc-hLseeU AhMjt"
+    >
+      <svg
+        fill="none"
+        height="20"
+        viewBox="0 0 20 20"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M11.762 10l4.113-4.112c.238-.226.375-.538.375-.888a1.254 1.254 0 00-2.137-.888L10 8.239 5.888 4.113a1.254 1.254 0 00-1.775 1.775L8.238 10l-4.113 4.113A1.207 1.207 0 003.75 15a1.254 1.254 0 002.138.887L10 11.762l4.113 4.113c.225.238.537.375.887.375a1.254 1.254 0 00.887-2.137L11.762 10z"
+          fill="#677489"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

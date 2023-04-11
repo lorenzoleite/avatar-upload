@@ -1,11 +1,10 @@
-import { StyledError, FilePreview, ErrorTitle } from './styles';
+import { StyledError, ErrorTitle } from './styles';
 
-import { AttentionIcon } from '../../assets/AttentionIcon';
-import { CloseIcon } from '../../assets/CloseIcon';
-
-import { Flex } from '../atoms/Flex';
-
-import { Button } from '../Button';
+import { AttentionIcon } from '../../atoms/AttentionIcon';
+import { CloseIcon } from '../../atoms/CloseIcon';
+import { ImagePreview } from '../../molecules/ImagePreview';
+import { Button } from '../../molecules/Button';
+import { Flex } from '../../molecules/Flex';
 
 type ErrorProps = {
   messageError: string;
@@ -16,9 +15,9 @@ export function Error({ messageError, onClose }: ErrorProps) {
   return (
     <StyledError>
       <Flex align="center">
-        <FilePreview>
+        <ImagePreview>
           <AttentionIcon />
-        </FilePreview>
+        </ImagePreview>
         <Flex direction="column" gap="0.2rem">
           <ErrorTitle>Sorry, {messageError.toLowerCase()}.</ErrorTitle>
           <Button variant="underline" onClick={() => onClose()}>

@@ -1,6 +1,13 @@
 export function CloseIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      fill="none"
+      viewBox="0 0 20 20"
+      data-testid="closeIcon"
+    >
       <path
         fill="#677489"
         fillRule="evenodd"

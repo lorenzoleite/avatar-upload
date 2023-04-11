@@ -20,20 +20,6 @@ export const Dropzone = styled.div<DropzoneProps>`
   `}
 `;
 
-export const ImagePreview = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 11.3rem;
-    height: 11.3rem;
-    border-radius: 7.25rem;
-    clip-path: circle();
-    margin-right: 5rem;
-    background-color: ${theme.color['gray.200']};
-  `}
-`;
-
 export const Image = styled.img`
   width: 11.3rem;
   height: 11.3rem;

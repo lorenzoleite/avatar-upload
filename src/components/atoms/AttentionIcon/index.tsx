@@ -1,6 +1,13 @@
 export function AttentionIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      fill="none"
+      viewBox="0 0 20 20"
+      data-testid="attentionIcon"
+    >
       <g clipPath="url(#clip0_1_34)">
         <path
           fill="#fff"

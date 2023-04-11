@@ -1,0 +1,354 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AvatarUpload > should be able to click on close button 1`] = `
+<div
+  class="sc-jTrPJq iOMyeE"
+>
+  <div
+    class="sc-beqWaB gmAapF"
+    role="dropzone"
+    tabindex="0"
+  >
+    <input
+      accept="image/png,.png,image/jpeg,.jpeg,.jpg"
+      data-testid="inputDropzone"
+      multiple=""
+      style="display: none;"
+      tabindex="-1"
+      type="file"
+    />
+    <div
+      class="sc-jTrPJq drZKDB"
+    >
+      <div
+        class="sc-jTrPJq bQJLXF"
+        direction="column"
+      >
+        <div
+          class="sc-jTrPJq uieWO"
+        >
+          <svg
+            data-testid="mediaIcon"
+            fill="none"
+            height="13"
+            viewBox="0 0 16 13"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M11.99 5.99c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm3-5h-14c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-10c0-.55-.45-1-1-1zm-1 9l-5-3-1 2-3-4-3 5v-7h12v7z"
+              fill="#495567"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <p
+            class="sc-dmqHEX jCntLR"
+          >
+            Organization Logo
+          </p>
+        </div>
+        <p
+          class="sc-dmqHEX sc-hLseeU jCntLR eztIiR"
+        >
+          Drop the image here or click to browse.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AvatarUpload > should be able to drop an image 1`] = `
+<div
+  class="sc-jTrPJq iOMyeE"
+>
+  <div
+    class="sc-beqWaB gmAapF"
+    role="dropzone"
+    tabindex="0"
+  >
+    <input
+      accept="image/png,.png,image/jpeg,.jpeg,.jpg"
+      data-testid="inputDropzone"
+      multiple=""
+      style="display: none;"
+      tabindex="-1"
+      type="file"
+    />
+    <div
+      class="sc-jTrPJq drZKDB"
+    >
+      <div
+        class="sc-jTrPJq bQJLXF"
+        direction="column"
+      >
+        <div
+          class="sc-jTrPJq uieWO"
+        >
+          <svg
+            data-testid="mediaIcon"
+            fill="none"
+            height="13"
+            viewBox="0 0 16 13"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M11.99 5.99c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm3-5h-14c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-10c0-.55-.45-1-1-1zm-1 9l-5-3-1 2-3-4-3 5v-7h12v7z"
+              fill="#495567"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <p
+            class="sc-dmqHEX jCntLR"
+          >
+            Organization Logo
+          </p>
+        </div>
+        <p
+          class="sc-dmqHEX sc-hLseeU jCntLR eztIiR"
+        >
+          Drop the image here or click to browse.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AvatarUpload > should get an error when trying to drop more than one file 1`] = `
+<div
+  class="sc-jTrPJq iOMyeE"
+>
+  <div
+    class="sc-gLDzan jTAwXb"
+  >
+    <div
+      class="sc-jTrPJq drZKDB"
+    >
+      <div
+        class="sc-eDDNvR eYUjFL"
+      >
+        <svg
+          data-testid="attentionIcon"
+          fill="none"
+          height="20"
+          viewBox="0 0 20 20"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            clip-path="url(#clip0_1_34)"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M9.988-.012c-5.525 0-10 4.475-10 10 0 5.524 4.474 10 10 10 5.524 0 10-4.476 10-10 0-5.525-4.476-10-10-10zm1.25 16.25h-2.5v-2.5h2.5v2.5zm0-3.75h-2.5v-8.75h2.5v8.75z"
+              fill="#fff"
+              fill-rule="evenodd"
+            />
+          </g>
+          <defs>
+            <clippath
+              id="clip0_1_34"
+            >
+              <path
+                d="M0 0H20V20H0z"
+                fill="#fff"
+              />
+            </clippath>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="sc-jTrPJq lkvzNi"
+        direction="column"
+      >
+        <p
+          class="sc-iAEyYk jEpnkG"
+        >
+          Sorry, 
+          too many files
+          .
+        </p>
+        <button
+          class="sc-fsQiph htAEUY"
+        >
+          Try again
+        </button>
+      </div>
+    </div>
+    <div
+      class="sc-jTrPJq iOMyeE"
+    >
+      <button
+        class="sc-fsQiph fdvfSW"
+      >
+        <svg
+          data-testid="closeIcon"
+          fill="none"
+          height="20"
+          viewBox="0 0 20 20"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M11.762 10l4.113-4.112c.238-.226.375-.538.375-.888a1.254 1.254 0 00-2.137-.888L10 8.239 5.888 4.113a1.254 1.254 0 00-1.775 1.775L8.238 10l-4.113 4.113A1.207 1.207 0 003.75 15a1.254 1.254 0 002.138.887L10 11.762l4.113 4.113c.225.238.537.375.887.375a1.254 1.254 0 00.887-2.137L11.762 10z"
+            fill="#677489"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AvatarUpload > should get an error when trying to drop unsupported file extension 1`] = `
+<div
+  class="sc-jTrPJq iOMyeE"
+>
+  <div
+    class="sc-gLDzan jTAwXb"
+  >
+    <div
+      class="sc-jTrPJq drZKDB"
+    >
+      <div
+        class="sc-eDDNvR eYUjFL"
+      >
+        <svg
+          data-testid="attentionIcon"
+          fill="none"
+          height="20"
+          viewBox="0 0 20 20"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            clip-path="url(#clip0_1_34)"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M9.988-.012c-5.525 0-10 4.475-10 10 0 5.524 4.474 10 10 10 5.524 0 10-4.476 10-10 0-5.525-4.476-10-10-10zm1.25 16.25h-2.5v-2.5h2.5v2.5zm0-3.75h-2.5v-8.75h2.5v8.75z"
+              fill="#fff"
+              fill-rule="evenodd"
+            />
+          </g>
+          <defs>
+            <clippath
+              id="clip0_1_34"
+            >
+              <path
+                d="M0 0H20V20H0z"
+                fill="#fff"
+              />
+            </clippath>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="sc-jTrPJq lkvzNi"
+        direction="column"
+      >
+        <p
+          class="sc-iAEyYk jEpnkG"
+        >
+          Sorry, 
+          file type must be image/png,.png,image/jpeg,.jpeg,.jpg
+          .
+        </p>
+        <button
+          class="sc-fsQiph htAEUY"
+        >
+          Try again
+        </button>
+      </div>
+    </div>
+    <div
+      class="sc-jTrPJq iOMyeE"
+    >
+      <button
+        class="sc-fsQiph fdvfSW"
+      >
+        <svg
+          data-testid="closeIcon"
+          fill="none"
+          height="20"
+          viewBox="0 0 20 20"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M11.762 10l4.113-4.112c.238-.226.375-.538.375-.888a1.254 1.254 0 00-2.137-.888L10 8.239 5.888 4.113a1.254 1.254 0 00-1.775 1.775L8.238 10l-4.113 4.113A1.207 1.207 0 003.75 15a1.254 1.254 0 002.138.887L10 11.762l4.113 4.113c.225.238.537.375.887.375a1.254 1.254 0 00.887-2.137L11.762 10z"
+            fill="#677489"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AvatarUpload > should render the AvatarUpload 1`] = `
+<div
+  class="sc-jTrPJq iOMyeE"
+>
+  <div
+    class="sc-beqWaB gmAapF"
+    role="dropzone"
+    tabindex="0"
+  >
+    <input
+      accept="image/png,.png,image/jpeg,.jpeg,.jpg"
+      data-testid="inputDropzone"
+      multiple=""
+      style="display: none;"
+      tabindex="-1"
+      type="file"
+    />
+    <div
+      class="sc-jTrPJq drZKDB"
+    >
+      <div
+        class="sc-jTrPJq bQJLXF"
+        direction="column"
+      >
+        <div
+          class="sc-jTrPJq uieWO"
+        >
+          <svg
+            data-testid="mediaIcon"
+            fill="none"
+            height="13"
+            viewBox="0 0 16 13"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M11.99 5.99c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm3-5h-14c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-10c0-.55-.45-1-1-1zm-1 9l-5-3-1 2-3-4-3 5v-7h12v7z"
+              fill="#495567"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <p
+            class="sc-dmqHEX jCntLR"
+          >
+            Organization Logo
+          </p>
+        </div>
+        <p
+          class="sc-dmqHEX sc-hLseeU jCntLR eztIiR"
+        >
+          Drop the image here or click to browse.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

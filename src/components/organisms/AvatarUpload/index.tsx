@@ -1,16 +1,25 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 
-import { Dropzone, DropzoneTitle, DropzoneSubtitle, Image, ImagePreview } from './styles';
+import { Dropzone, DropzoneTitle, DropzoneSubtitle, Image } from './styles';
 
-import { Flex } from '../atoms/Flex';
+import { theme } from '../../../themes/theme';
 
+import { MediaIcon } from '../../atoms/MediaIcon';
+import { ImagePreview } from '../../molecules/ImagePreview';
+import { Flex } from '../../molecules/Flex';
 import { Error } from '../Error';
 import { Crop } from '../Crop';
 
-import { MediaIcon } from '../../assets/MediaIcon';
-
 type AvatarUploadProps = {};
+
+const acceptStyle = {
+  borderColor: theme.color['blue.200'],
+};
+
+const rejectStyle = {
+  borderColor: theme.color['orange.100'],
+};
 
 export function AvatarUpload({}: AvatarUploadProps) {
   const [imageFile, setImageFile] = useState<File | null>(null);
@@ -18,7 +27,7 @@ export function AvatarUpload({}: AvatarUploadProps) {
   const [hasError, setHasError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<string | null>(null);
 
-  const { getRootProps, getInputProps } = useDropzone({
+  const { getRootProps, getInputProps, isDragAccept, isDragReject } = useDropzone({
     accept: { 'image/png': ['.png'], 'image/jpeg': ['.jpeg', '.jpg'] },
     maxFiles: 1,
     onDropAccepted: file => {
@@ -42,15 +51,23 @@ export function AvatarUpload({}: AvatarUploadProps) {
     setCroppedImage(imageUrl);
   };
 
+  const style = useMemo(
+    () => ({
+      ...(isDragAccept && acceptStyle),
+      ...(isDragReject && rejectStyle),
+    }),
+    [isDragAccept, isDragReject],
+  );
+
   return (
     <Flex>
       {!imageFile && !hasError && (
-        <Dropzone {...getRootProps()} justify={croppedImage ? 'flex-start' : 'center'}>
-          <input {...getInputProps()} />
+        <Dropzone {...getRootProps({ style })} justify={croppedImage ? 'flex-start' : 'center'} role="dropzone">
+          <input {...getInputProps()} data-testid="inputDropzone" />
           <Flex align="center">
             {croppedImage && (
-              <ImagePreview>
-                <Image src={croppedImage} />
+              <ImagePreview marginRight="5rem">
+                <Image src={croppedImage} alt="Image Preview" data-testid="imagePreview" />
               </ImagePreview>
             )}
             <Flex direction="column" align="center">

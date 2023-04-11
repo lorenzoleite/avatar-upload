@@ -1,0 +1,147 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Crop > should be able to change the slider value 1`] = `
+<div
+  class="sc-beqWaB gMrYaT"
+>
+  <div
+    class="sc-jTrPJq drZKDB"
+  >
+    <div
+      class="sc-dmqHEX hOiHPF"
+    >
+      <canvas
+        height="114"
+        style="width: 114px; height: 114px; cursor: grab;"
+        width="114"
+      />
+    </div>
+    <div
+      class="sc-jTrPJq jdArkA"
+      direction="column"
+    >
+      <p
+        class="sc-gueYoa herwdC"
+      >
+        Crop
+      </p>
+      <input
+        class="sc-eDDNvR ZjaFm"
+        data-testid="slider"
+        id="crop-slider"
+        max="2"
+        min="1"
+        step="0.1"
+        type="range"
+        value="1.2"
+      />
+      <div
+        class="sc-jTrPJq ksmVWf"
+        direction="row"
+        width="100%"
+      >
+        <button
+          class="sc-hLseeU kcTgSF"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-jTrPJq iOMyeE"
+  >
+    <button
+      class="sc-hLseeU AhMjt"
+    >
+      <svg
+        fill="none"
+        height="20"
+        viewBox="0 0 20 20"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M11.762 10l4.113-4.112c.238-.226.375-.538.375-.888a1.254 1.254 0 00-2.137-.888L10 8.239 5.888 4.113a1.254 1.254 0 00-1.775 1.775L8.238 10l-4.113 4.113A1.207 1.207 0 003.75 15a1.254 1.254 0 002.138.887L10 11.762l4.113 4.113c.225.238.537.375.887.375a1.254 1.254 0 00.887-2.137L11.762 10z"
+          fill="#677489"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Crop > should render the Crop 1`] = `
+<div
+  class="sc-beqWaB gMrYaT"
+>
+  <div
+    class="sc-jTrPJq drZKDB"
+  >
+    <div
+      class="sc-dmqHEX hOiHPF"
+    >
+      <canvas
+        height="114"
+        style="width: 114px; height: 114px; cursor: grab;"
+        width="114"
+      />
+    </div>
+    <div
+      class="sc-jTrPJq jdArkA"
+      direction="column"
+    >
+      <p
+        class="sc-gueYoa herwdC"
+      >
+        Crop
+      </p>
+      <input
+        class="sc-eDDNvR iMQIHe"
+        data-testid="slider"
+        id="crop-slider"
+        max="2"
+        min="1"
+        step="0.1"
+        type="range"
+        value="1"
+      />
+      <div
+        class="sc-jTrPJq ksmVWf"
+        direction="row"
+        width="100%"
+      >
+        <button
+          class="sc-hLseeU kcTgSF"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-jTrPJq iOMyeE"
+  >
+    <button
+      class="sc-hLseeU AhMjt"
+    >
+      <svg
+        fill="none"
+        height="20"
+        viewBox="0 0 20 20"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M11.762 10l4.113-4.112c.238-.226.375-.538.375-.888a1.254 1.254 0 00-2.137-.888L10 8.239 5.888 4.113a1.254 1.254 0 00-1.775 1.775L8.238 10l-4.113 4.113A1.207 1.207 0 003.75 15a1.254 1.254 0 002.138.887L10 11.762l4.113 4.113c.225.238.537.375.887.375a1.254 1.254 0 00.887-2.137L11.762 10z"
+          fill="#677489"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

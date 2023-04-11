@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { StyledWrapper } from './styles';
 
 type WrapperProps = {
