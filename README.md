@@ -4,7 +4,7 @@ Avatar Upload is a React Component to allow users to upload images to make it ea
 
 ## 💻 Demo
 
-### 🔗 [_You can look at the demo here_](https://)
+### 🔗 [_You can look at the demo here_](https://avatar-upload-five.vercel.app/)
 
 <br />
 <p align="center">
