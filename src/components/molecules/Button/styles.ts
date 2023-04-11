@@ -25,12 +25,18 @@ const modifiers = {
     text-decoration: none;
 
     padding: 0.2rem;
+    border: none;
+    outline: none;
     border-radius: 0;
 
     clip-path: circle();
     background-color: transparent;
 
     &:hover {
+      padding: 0.2rem;
+      background-color: ${theme.color['gray.200']};
+    }
+    &:focus {
       padding: 0.2rem;
       background-color: ${theme.color['gray.200']};
     }

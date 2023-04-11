@@ -12,6 +12,7 @@ export const Dropzone = styled.div<DropzoneProps>`
     height: 17.7rem;
     padding: 3.2rem;
     border-radius: 0.8rem;
+    cursor: pointer;
     background-color: ${theme.color['gray.100']};
 
     border-width: 2px;
