@@ -7,6 +7,7 @@ export const StyledInput = styled.input`
     height: 0.2rem;
     border-radius: 0.1rem;
     margin-bottom: 3.5rem;
+    cursor: pointer;
 
     background-color: ${theme.color['blue.100']};
     color: ${theme.color['blue.200']};
