@@ -67,7 +67,7 @@ export function AvatarUpload({}: AvatarUploadProps) {
           <Flex align="center">
             {croppedImage && (
               <ImagePreview marginRight="5rem">
-                <Image src={croppedImage} alt="Image Preview" data-testid="imagePreview" />
+                <Image src={croppedImage} alt="Image Preview" />
               </ImagePreview>
             )}
             <Flex direction="column" align="center">

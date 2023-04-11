@@ -2,15 +2,16 @@
 
 exports[`Error > should render the Error 1`] = `
 <div
-  class="sc-beqWaB gMrYaT"
+  class="sc-fmSAUk hiXeEW"
 >
   <div
-    class="sc-eDDNvR llEuPJ"
+    class="sc-dKfzgJ cOLHTs"
   >
     <div
-      class="sc-dmqHEX hOiHPF"
+      class="sc-blLsxD klCXxN"
     >
       <svg
+        data-testid="attentionIcon"
         fill="none"
         height="20"
         viewBox="0 0 20 20"
@@ -40,30 +41,31 @@ exports[`Error > should render the Error 1`] = `
       </svg>
     </div>
     <div
-      class="sc-eDDNvR ihnWCC"
+      class="sc-dKfzgJ iygmQv"
       direction="column"
     >
       <p
-        class="sc-gueYoa edkQtc"
+        class="sc-fGFwAa GHXaE"
       >
         Sorry, 
         sorry, the upload failed.
         .
       </p>
       <button
-        class="sc-hLseeU ffsHWn"
+        class="sc-ieZDjg crovzC"
       >
         Try again
       </button>
     </div>
   </div>
   <div
-    class="sc-eDDNvR bfNvSM"
+    class="sc-dKfzgJ klmaLt"
   >
     <button
-      class="sc-hLseeU AhMjt"
+      class="sc-ieZDjg jvvPRo"
     >
       <svg
+        data-testid="closeIcon"
         fill="none"
         height="20"
         viewBox="0 0 20 20"

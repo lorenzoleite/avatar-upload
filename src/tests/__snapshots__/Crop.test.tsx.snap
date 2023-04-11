@@ -2,13 +2,13 @@
 
 exports[`Crop > should be able to change the slider value 1`] = `
 <div
-  class="sc-beqWaB gMrYaT"
+  class="sc-irTswW egOFGJ"
 >
   <div
-    class="sc-jTrPJq drZKDB"
+    class="sc-hAtEyd ebydGn"
   >
     <div
-      class="sc-dmqHEX hOiHPF"
+      class="sc-fbJfA fLXmBR"
     >
       <canvas
         height="114"
@@ -17,16 +17,16 @@ exports[`Crop > should be able to change the slider value 1`] = `
       />
     </div>
     <div
-      class="sc-jTrPJq jdArkA"
+      class="sc-hAtEyd lneCAO"
       direction="column"
     >
       <p
-        class="sc-gueYoa herwdC"
+        class="sc-csCMJt ecGFru"
       >
         Crop
       </p>
       <input
-        class="sc-eDDNvR ZjaFm"
+        class="sc-ktEKTO brvnIf"
         data-testid="slider"
         id="crop-slider"
         max="2"
@@ -36,12 +36,12 @@ exports[`Crop > should be able to change the slider value 1`] = `
         value="1.2"
       />
       <div
-        class="sc-jTrPJq ksmVWf"
+        class="sc-hAtEyd dAyymh"
         direction="row"
         width="100%"
       >
         <button
-          class="sc-hLseeU kcTgSF"
+          class="sc-brKeYL hvEvOw"
         >
           Save
         </button>
@@ -49,12 +49,13 @@ exports[`Crop > should be able to change the slider value 1`] = `
     </div>
   </div>
   <div
-    class="sc-jTrPJq iOMyeE"
+    class="sc-hAtEyd eeUmeC"
   >
     <button
-      class="sc-hLseeU AhMjt"
+      class="sc-brKeYL gqAyHA"
     >
       <svg
+        data-testid="closeIcon"
         fill="none"
         height="20"
         viewBox="0 0 20 20"
@@ -75,13 +76,13 @@ exports[`Crop > should be able to change the slider value 1`] = `
 
 exports[`Crop > should render the Crop 1`] = `
 <div
-  class="sc-beqWaB gMrYaT"
+  class="sc-irTswW egOFGJ"
 >
   <div
-    class="sc-jTrPJq drZKDB"
+    class="sc-hAtEyd ebydGn"
   >
     <div
-      class="sc-dmqHEX hOiHPF"
+      class="sc-fbJfA fLXmBR"
     >
       <canvas
         height="114"
@@ -90,16 +91,16 @@ exports[`Crop > should render the Crop 1`] = `
       />
     </div>
     <div
-      class="sc-jTrPJq jdArkA"
+      class="sc-hAtEyd lneCAO"
       direction="column"
     >
       <p
-        class="sc-gueYoa herwdC"
+        class="sc-csCMJt ecGFru"
       >
         Crop
       </p>
       <input
-        class="sc-eDDNvR iMQIHe"
+        class="sc-ktEKTO cSNWnz"
         data-testid="slider"
         id="crop-slider"
         max="2"
@@ -109,12 +110,12 @@ exports[`Crop > should render the Crop 1`] = `
         value="1"
       />
       <div
-        class="sc-jTrPJq ksmVWf"
+        class="sc-hAtEyd dAyymh"
         direction="row"
         width="100%"
       >
         <button
-          class="sc-hLseeU kcTgSF"
+          class="sc-brKeYL hvEvOw"
         >
           Save
         </button>
@@ -122,12 +123,13 @@ exports[`Crop > should render the Crop 1`] = `
     </div>
   </div>
   <div
-    class="sc-jTrPJq iOMyeE"
+    class="sc-hAtEyd eeUmeC"
   >
     <button
-      class="sc-hLseeU AhMjt"
+      class="sc-brKeYL gqAyHA"
     >
       <svg
+        data-testid="closeIcon"
         fill="none"
         height="20"
         viewBox="0 0 20 20"
